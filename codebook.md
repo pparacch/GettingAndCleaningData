@@ -1,7 +1,7 @@
 #Information about the Raw Data
 Information about the raw data can be found in the links below and the __README.txt__ file contained in the raw data.
 
-[Human Activity Recognition Using Smartphones] (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
+[Human Activity Recognition Using Smartphones] (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)[1]
 
 [raw data (ZIP format)](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
@@ -215,102 +215,140 @@ Please note that '-XYZ' is used to denote 3-axial variables in the X, Y and Z di
 
 	"timeBodyAccelerometer-mean()-XYZ" 
 		average of the body accelleration mean for each activity and subject (time domain)
+		unit: "g"
 
 	"timeBodyAccelerometer-std()-XYZ"
 		average of the body accelleration standard deviation for each activity and subject (time domain)
-
+		unit: "g"
+		
 	"timeGravityAccelerometer-mean()-XYZ"
 		average of the gravity accelleration mean for each activity and subject (time domain)
-
+		unit: "g"
+		
 	"timeGravityAccelerometer-std()-XYZ"
 		average of the gravity accelleration standard deviation for each activity and subject (time domain)
-
+		unit: "g"
+		
 	"timeBodyAccelerometerJerk-mean()-XYZ" 
 		average of the body accelleration Jerk mean for each activity and subject (time domain)
-
+		unit: "g"
+		
 	"timeBodyAccelerometerJerk-std()-XYZ" 
 		average of the body accelleration Jerk standard deviation for each activity and subject (time domain)
-
+		unit: "g"
+		
 	"timeBodyGyroscope-mean()-XYZ"
 		average of the body angular velocity mean for each activity and subject (time domain)
+		unit: "radians/ second"
 		
 	"timeBodyGyroscope-std()-XYZ"
 		average of the body angular velocity standard deviation for each activity and subject (time domain) 
-	
+		unit: "radians/ second"
+		
 	"timeBodyGyroscopeJerk-mean()-XYZ" 
 		average of the body angular velocity Jerk mean for each activity and subject (time domain)
+		unit: "radians/ second"
 		
 	"timeBodyGyroscopeJerk-std()-XYZ"
 		average of the body angular velocity Jerk standard deviation for each activity and subject (time domain)
-
+		unit: "radians/ second"
+		
 	"timeBodyAccelerometerMagnitude-mean()"
 		average of the body acceleration magnitude mean for each activity and subject (time domain)
+		unit: "g"
 		
 	"timeBodyAccelerometerMagnitude-std()"
 		average of the body acceleration magnitude standard deviation for each activity and subject (time domain)
-	 
+	 	unit: "g"
+	 	
 	"timeGravityAccelerometerMagnitude-mean()"
 		average of the gravity acceleration magnitude mean for each activity and subject (time domain)
+		unit: "g"
 		
 	"timeGravityAccelerometerMagnitude-std()"
 		average of the gravity acceleration magnitude standard deviation for each activity and subject (time domain)
+		unit: "g"
 		
 	"timeBodyAccelerometerJerkMagnitude-mean()"
 		average of the body acceleration Jerk magnitude mean for each activity and subject (time domain)
+		unit: "g"
 		
 	"timeBodyAccelerometerJerkMagnitude-std()" 
 		average of the body acceleration Jerk magnitude standard deviation for each activity and subject (time domain)
+		unit: "g"
 		
 	"timeBodyGyroscopeMagnitude-mean()"
 		average of the body angular velocity magnitude mean for each activity and subject (time domain)
+		unit: "radians/ second"
 		
 	"timeBodyGyroscopeMagnitude-std()" 
 		average of the body angular velocity magnitude standard deviation for each activity and subject (time domain)
+		unit: "radians/ second"
 		
 	"timeBodyGyroscopeJerkMagnitude-mean()"
 		average of the body angular velocity Jerk magnitude mean for each activity and subject (time domain)
+		unit: "radians/ second"
 		 
 	"timeBodyGyroscopeJerkMagnitude-std()"
 		average of the body angular velocity Jerk magnitude standard deviation for each activity and subject (time domain) 
+		unit: "radians/ second"
 	
 	"frequencyBodyAccelerometer-mean()-XYZ"
-		average of the body accelleration mean for each activity and subject (frequence domain)
+		average of the body accelleration mean for each activity and subject (frequency domain)
+		unit: "g"
 	
 	"frequencyBodyAccelerometer-std()-XYZ"
-		average of the body accelleration mean for standard deviation activity and subject (frequence domain)
+		average of the body accelleration mean for standard deviation activity and subject (frequency domain)
+		unit: "g"
 		
 	"frequencyBodyAccelerometerJerk-mean()-XYZ"
-		average of the body accelleration Jerk mean for each activity and subject (frequence domain)
+		average of the body accelleration Jerk mean for each activity and subject (frequency domain)
+		unit: "g"
 		
 	"frequencyBodyAccelerometerJerk-std()-XYZ"
-		average of the body accelleration Jerk standard deviation for each activity and subject (frequence domain)
+		average of the body accelleration Jerk standard deviation for each activity and subject (frequency domain)
+		unit: "g"
 	
 	"frequencyBodyGyroscope-mean()-XYZ"
-		average of the body angular velocity mean for each activity and subject (frequence domain)
+		average of the body angular velocity mean for each activity and subject (frequency domain)
+		unit: "radians/ second"
 	
 	"frequencyBodyGyroscope-std()-XYZ"
-		average of the body angular velocity standard deviation for each activity and subject (frequence domain)
+		average of the body angular velocity standard deviation for each activity and subject (frequency domain)
+		unit: "radians/ second"
 		
 	"frequencyBodyAccelerometerMagnitude-mean()"
-		average of the body acceleration magnitude mean for each activity and subject (frequence domain)
+		average of the body acceleration magnitude mean for each activity and subject (frequency domain)
+		unit: "g"
 		
 	"frequencyBodyAccelerometerMagnitude-std()"
-		average of the body acceleration magnitude standard deviation for each activity and subject (frequence domain)
+		average of the body acceleration magnitude standard deviation for each activity and subject (frequency domain)
+		unit: "g"
 	
 	"frequencyBodyAccelerometerJerkMagnitude-mean()"
-		average of the body acceleration Jerk magnitude mean for each activity and subject (frequence domain)
+		average of the body acceleration Jerk magnitude mean for each activity and subject (frequency domain)
+		unit: "g"
 		 
 	"frequencyBodyAccelerometerJerkMagnitude-std()" 
-		average of the body acceleration Jerk magnitude standard deviation for each activity and subject (frequence domain)
+		average of the body acceleration Jerk magnitude standard deviation for each activity and subject (frequency domain)
+		unit: "g"
 		
 	"frequencyBodyGyroscopeMagnitude-mean()"
-		average of the body angular velocity magnitude mean for each activity and subject (frequence domain)
+		average of the body angular velocity magnitude mean for each activity and subject (frequency domain)
+		unit: "radians/ second"
 		 
 	"frequencyBodyGyroscopeMagnitude-std()" 
-		average of the body angular velocity magnitude standard deviation for each activity and subject (frequence domain)
+		average of the body angular velocity magnitude standard deviation for each activity and subject (frequency domain)
+		unit: "radians/ second"
 			
 	"frequencyBodyGyroscopeJerkMagnitude-mean()"
-		average of the body angular velocity Jerk magnitude mean for each activity and subject (frequence domain)
+		average of the body angular velocity Jerk magnitude mean for each activity and subject (frequency domain)
+		unit: "radians/ second"
 		
 	"frequencyBodyGyroscopeJerkMagnitude-std()"
-		average of the body angular velocity Jerk magnitude standard deviation for each activity and subject (frequence domain)
+		average of the body angular velocity Jerk magnitude standard deviation for each activity and subject (frequency domain)
+		unit: "radians/ second"
+
+__References__
+
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012

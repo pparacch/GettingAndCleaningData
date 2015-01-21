@@ -22,7 +22,7 @@ Prepare a tidy dataset that can be used for later analysis and required supporti
 
 *A full description is available at the site where the data was obtained:*
 
-[Human Activity Recognition Using Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) 
+[Human Activity Recognition Using Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)[1]
 
 *Here are the data for the project:*
 
@@ -73,4 +73,6 @@ __Note!__ If you want to dowload a more recent version of the raw data please us
 	fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 	download.file(fileUrl, destfile = "./rawData.zip", method = "curl")
 
+__References__
 
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
