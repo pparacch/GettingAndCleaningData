@@ -70,9 +70,7 @@ Opening the files with a text editor we can see that
 
 For reading the files a `read.table(file)` has been used.
 
-Some exploration of the loaded datasets has been done in order to have an overview of the provided data and avoid surprises. An example of the exploration done on the 
-
-Please note how the loaded datasets have the same number of observations as expected.
+Some exploration of the loaded datasets has been done in order to have an overview of the provided data and avoid surprises. An example of the exploration done on the dataset can be found below.
 
 __test\_data ('test/X_test.txt') Summary__
 
@@ -135,6 +133,8 @@ From the summary we can see that there are not NAs and the values range between 
 	 Mean   :12.99  
 	 3rd Qu.:18.00  
 	 Max.   :24.00
+
+Please note how the loaded datasets have the same number of observations as expected.
 
 ### Merging the loaded datasets
 From the summary we can verify that the loaded datasets `test_data`, `test_labels` and `test_subjects` have the same number of observations as expected.
