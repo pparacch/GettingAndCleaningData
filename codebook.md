@@ -317,7 +317,7 @@ Please note that '-XYZ' is used to denote 3-axial variables in the X, Y and Z di
 		unit: "g"
 	
 	"frequencyBodyAccelerometer-std()-XYZ"
-		average of the body accelleration mean for standard deviation activity and subject (frequency domain)
+		average of the body accelleration mean for standard deviation (frequency domain)
 		unit: "g"
 		
 	"frequencyBodyAccelerometerJerk-mean()-XYZ"
