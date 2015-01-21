@@ -131,6 +131,7 @@ names(data_set) <- sub("^f", "frequency", names(data_set))
 names(data_set) <- sub("Acc", "Accelerometer", names(data_set))
 names(data_set) <- sub("Gyro", "Gyroscope", names(data_set))
 names(data_set) <- sub("Mag", "Magnitude", names(data_set))
+names(data_set) <- sub("BodyBody", "Body", names(data_set))
 
 ##########################################################################
 ## 5. create a second independent tidy data set with the average of     ##
