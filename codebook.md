@@ -1,7 +1,7 @@
 #Information about the Raw Data
 Information about the raw data can be found in the links below and the __README.txt__ file contained in the raw data.
 
-[Human Activity Recognition Using Smartphones] (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)[1]
+[Human Activity Recognition Using Smartphones] (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) [1]
 
 [raw data (ZIP format)](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
@@ -13,8 +13,11 @@ Information about the raw data can be found in the links below and the __README.
 
 *"For each record it is provided ...*
 
+
 - *__A 561-feature vector__ with time and frequency domain variables.*
+
 - *__Its activity label.__* 
+
 - *__An identifier of the subject who carried out the experiment.__*"
 
 ...
@@ -23,28 +26,44 @@ Information about the raw data can be found in the links below and the __README.
 
 - *'features_info.txt': Shows __information__ about the __variables used on the feature vector__.*
 
+
 - *'features.txt': __List of all features__.*
+
+
 
 - *'activity_labels.txt': Links the __class labels__ with their __activity name__.*
 
+
+
 - *'train/X_train.txt': __Training set__.*
+
+
 
 - *'train/y_train.txt': __Training labels__.*
 
+
+
 - *'test/X_test.txt': __Test set__.*
+
+
 
 - *'test/y_test.txt': __Test labels__.*
 
+
 ...
+
 
 *"The following files are available for the train and test data. Their descriptions are equivalent. ...*
 
+
 - *'train/subject_train.txt': Each row __identifies the subject who performed the activity for each window sample__. Its range is from 1 to 30.*"
+
 
 #Study Design
 For the creation of the tidy dataset the following main design decisions have been taken.
 ## Merging the training and test data to create one dataset
 The __README.txt__ file in the raw data provides some direction where to find the training and test relevant files.
+
 
 Test relevant files:
 
@@ -214,87 +233,87 @@ Please note that '-XYZ' is used to denote 3-axial variables in the X, Y and Z di
 		subject identifier - range form 1..30
 
 	"timeBodyAccelerometer-mean()-XYZ" 
-		average of the body accelleration mean for each activity and subject (time domain)
+		average of the body accelleration mean (time domain)
 		unit: "g"
 
 	"timeBodyAccelerometer-std()-XYZ"
-		average of the body accelleration standard deviation for each activity and subject (time domain)
+		average of the body accelleration standard deviation (time domain)
 		unit: "g"
 		
 	"timeGravityAccelerometer-mean()-XYZ"
-		average of the gravity accelleration mean for each activity and subject (time domain)
+		average of the gravity accelleration mean (time domain)
 		unit: "g"
 		
 	"timeGravityAccelerometer-std()-XYZ"
-		average of the gravity accelleration standard deviation for each activity and subject (time domain)
+		average of the gravity accelleration standard deviation (time domain)
 		unit: "g"
 		
 	"timeBodyAccelerometerJerk-mean()-XYZ" 
-		average of the body accelleration Jerk mean for each activity and subject (time domain)
+		average of the body accelleration Jerk mean (time domain)
 		unit: "g"
 		
 	"timeBodyAccelerometerJerk-std()-XYZ" 
-		average of the body accelleration Jerk standard deviation for each activity and subject (time domain)
+		average of the body accelleration Jerk standard deviation (time domain)
 		unit: "g"
 		
 	"timeBodyGyroscope-mean()-XYZ"
-		average of the body angular velocity mean for each activity and subject (time domain)
+		average of the body angular velocity mean (time domain)
 		unit: "radians/ second"
 		
 	"timeBodyGyroscope-std()-XYZ"
-		average of the body angular velocity standard deviation for each activity and subject (time domain) 
+		average of the body angular velocity standard deviation (time domain) 
 		unit: "radians/ second"
 		
 	"timeBodyGyroscopeJerk-mean()-XYZ" 
-		average of the body angular velocity Jerk mean for each activity and subject (time domain)
+		average of the body angular velocity Jerk mean (time domain)
 		unit: "radians/ second"
 		
 	"timeBodyGyroscopeJerk-std()-XYZ"
-		average of the body angular velocity Jerk standard deviation for each activity and subject (time domain)
+		average of the body angular velocity Jerk standard deviation (time domain)
 		unit: "radians/ second"
 		
 	"timeBodyAccelerometerMagnitude-mean()"
-		average of the body acceleration magnitude mean for each activity and subject (time domain)
+		average of the body acceleration magnitude mean (time domain)
 		unit: "g"
 		
 	"timeBodyAccelerometerMagnitude-std()"
-		average of the body acceleration magnitude standard deviation for each activity and subject (time domain)
+		average of the body acceleration magnitude standard deviation (time domain)
 	 	unit: "g"
 	 	
 	"timeGravityAccelerometerMagnitude-mean()"
-		average of the gravity acceleration magnitude mean for each activity and subject (time domain)
+		average of the gravity acceleration magnitude mean (time domain)
 		unit: "g"
 		
 	"timeGravityAccelerometerMagnitude-std()"
-		average of the gravity acceleration magnitude standard deviation for each activity and subject (time domain)
+		average of the gravity acceleration magnitude standard deviation (time domain)
 		unit: "g"
 		
 	"timeBodyAccelerometerJerkMagnitude-mean()"
-		average of the body acceleration Jerk magnitude mean for each activity and subject (time domain)
+		average of the body acceleration Jerk magnitude mean (time domain)
 		unit: "g"
 		
 	"timeBodyAccelerometerJerkMagnitude-std()" 
-		average of the body acceleration Jerk magnitude standard deviation for each activity and subject (time domain)
+		average of the body acceleration Jerk magnitude standard deviation (time domain)
 		unit: "g"
 		
 	"timeBodyGyroscopeMagnitude-mean()"
-		average of the body angular velocity magnitude mean for each activity and subject (time domain)
+		average of the body angular velocity magnitude mean (time domain)
 		unit: "radians/ second"
 		
 	"timeBodyGyroscopeMagnitude-std()" 
-		average of the body angular velocity magnitude standard deviation for each activity and subject (time domain)
+		average of the body angular velocity magnitude standard deviation (time domain)
 		unit: "radians/ second"
 		
 	"timeBodyGyroscopeJerkMagnitude-mean()"
-		average of the body angular velocity Jerk magnitude mean for each activity and subject (time domain)
+		average of the body angular velocity Jerk magnitude mean (time domain)
 		unit: "radians/ second"
 		 
 	"timeBodyGyroscopeJerkMagnitude-std()"
-		average of the body angular velocity Jerk magnitude standard deviation for each activity and subject (time domain) 
+		average of the body angular velocity Jerk magnitude standard deviation (time domain) 
 		unit: "radians/ second"
 	
 	"frequencyBodyAccelerometer-mean()-XYZ"
-		average of the body accelleration mean for each activity and subject (frequency domain)
+		average of the body accelleration mean (frequency domain)
 		unit: "g"
 	
 	"frequencyBodyAccelerometer-std()-XYZ"
@@ -302,51 +321,51 @@ Please note that '-XYZ' is used to denote 3-axial variables in the X, Y and Z di
 		unit: "g"
 		
 	"frequencyBodyAccelerometerJerk-mean()-XYZ"
-		average of the body accelleration Jerk mean for each activity and subject (frequency domain)
+		average of the body accelleration Jerk mean (frequency domain)
 		unit: "g"
 		
 	"frequencyBodyAccelerometerJerk-std()-XYZ"
-		average of the body accelleration Jerk standard deviation for each activity and subject (frequency domain)
+		average of the body accelleration Jerk standard deviation (frequency domain)
 		unit: "g"
 	
 	"frequencyBodyGyroscope-mean()-XYZ"
-		average of the body angular velocity mean for each activity and subject (frequency domain)
+		average of the body angular velocity mean (frequency domain)
 		unit: "radians/ second"
 	
 	"frequencyBodyGyroscope-std()-XYZ"
-		average of the body angular velocity standard deviation for each activity and subject (frequency domain)
+		average of the body angular velocity standard deviation (frequency domain)
 		unit: "radians/ second"
 		
 	"frequencyBodyAccelerometerMagnitude-mean()"
-		average of the body acceleration magnitude mean for each activity and subject (frequency domain)
+		average of the body acceleration magnitude mean (frequency domain)
 		unit: "g"
 		
 	"frequencyBodyAccelerometerMagnitude-std()"
-		average of the body acceleration magnitude standard deviation for each activity and subject (frequency domain)
+		average of the body acceleration magnitude standard deviation (frequency domain)
 		unit: "g"
 	
 	"frequencyBodyAccelerometerJerkMagnitude-mean()"
-		average of the body acceleration Jerk magnitude mean for each activity and subject (frequency domain)
+		average of the body acceleration Jerk magnitude mean (frequency domain)
 		unit: "g"
 		 
 	"frequencyBodyAccelerometerJerkMagnitude-std()" 
-		average of the body acceleration Jerk magnitude standard deviation for each activity and subject (frequency domain)
+		average of the body acceleration Jerk magnitude standard deviation (frequency domain)
 		unit: "g"
 		
 	"frequencyBodyGyroscopeMagnitude-mean()"
-		average of the body angular velocity magnitude mean for each activity and subject (frequency domain)
+		average of the body angular velocity magnitude mean (frequency domain)
 		unit: "radians/ second"
 		 
 	"frequencyBodyGyroscopeMagnitude-std()" 
-		average of the body angular velocity magnitude standard deviation for each activity and subject (frequency domain)
+		average of the body angular velocity magnitude standard deviation (frequency domain)
 		unit: "radians/ second"
 			
 	"frequencyBodyGyroscopeJerkMagnitude-mean()"
-		average of the body angular velocity Jerk magnitude mean for each activity and subject (frequency domain)
+		average of the body angular velocity Jerk magnitude mean (frequency domain)
 		unit: "radians/ second"
 		
 	"frequencyBodyGyroscopeJerkMagnitude-std()"
-		average of the body angular velocity Jerk magnitude standard deviation for each activity and subject (frequency domain)
+		average of the body angular velocity Jerk magnitude standard deviation (frequency domain)
 		unit: "radians/ second"
 
 __References__
