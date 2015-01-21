@@ -203,6 +203,29 @@ The merging of the two datasets has been done using a `rbind` to create a `merge
 	#Merge the test dataset and training dataset (row wise)
 	merged_data_set <- rbind(test_data_set, training_data_set)
 
+## Extracting only measurements on mean & standar deviation
+
+Looking at the available feature/ column names - the criteria used to find the desired names is to look for feature/ colomn names containing __"mean()" or "std()"__.
+
+The selected criteria allows to filter out the features/ columns containing "meanFreq" like
+
+	"fBodyAcc-meanFreq()-X"
+
+and features/ columns containing "Mean" like
+
+	"angle(tBodyAccMean,gravity)"         
+	"angle(tBodyAccJerkMean),gravityMean)"
+	"angle(tBodyGyroMean,gravityMean)"    
+	"angle(tBodyGyroJerkMean,gravityMean)"
+	"angle(X,gravityMean)"                
+	"angle(Y,gravityMean)"                
+	"angle(Z,gravityMean)"
+	
+Code performing the subsetting based on the selected criteria
+
+	names_merged_data_set <- names(merged_data_set)
+	data_set <- merged_data_set[,c(1, 2, grep("*std\\(\\)|*mean\\(\\)", names_merged_data_set, ignore.case = TRUE))]
+
 ## Naming of variables
 For increasing clarity around the name of variables/ columns in the data set the following changes have been made
   
