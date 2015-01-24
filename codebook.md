@@ -60,7 +60,7 @@ Information about the raw data can be found in the links below and the __README.
 
 
 #Study Design
-For the creation of the tidy dataset the following main design decisions have been taken.
+For the creation of the __tidy dataset__ the __following main design decisions have been taken__.
 ## Merging the training and test data to create one dataset
 The __README.txt__ file in the raw data provides some direction where to find the training and test relevant files.
 
@@ -221,7 +221,7 @@ and features/ columns containing "Mean" like
 	"angle(Y,gravityMean)"                
 	"angle(Z,gravityMean)"
 	
-Code performing the subsetting based on the selected criteria
+Code performing the subsetting based on the selected criteria.
 
 	names_merged_data_set <- names(merged_data_set)
 	data_set <- merged_data_set[,c(1, 2, grep("*std\\(\\)|*mean\\(\\)", names_merged_data_set, ignore.case = TRUE))]
@@ -238,12 +238,25 @@ For increasing clarity around the name of variables/ columns in the data set the
 
 based on information provided in the 'features_info.txt' file.
 
+## Creation of a second independent tidy dataset with the average of each variable for each activity and each subject.
+
+The creation of the second indipendent tidy dataset has been done using the `aggregate` function part of the `{stats}` package. This function splits the data into subsets, computes summary statistics for each, and returns the result in a convenient form.
+
+	averages_by_activity_and_subject_data_set <- aggregate(. ~ activity + subject, data_set, mean)
+
 #Code book
 The created tidy dataset satisfies the general principles of tidy data
 
 * each variable is in one column
 * each different observation of a variable is in a different row
 * there is one table/ file for each "kind" of variable
+
+The tidy dataset `averages_by_activity_and_subject_data_set` contains 180 observations, __1 observation for each subject (30 subjects) and each activity (6 activities)__.
+
+	> dim(averages_by_activity_and_subject_data_set)
+	[1] 180  68
+
+Each observation contains 68 variables: __activity__, __subject__, __average of each variable (for provided subject and activity)__ (66 variables).
 
 ##Data dictionary
 
