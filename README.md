@@ -46,11 +46,9 @@ Prepare a tidy dataset that can be used for later analysis and required supporti
 ##How to generate the tidy dataset
 * Clone the repository `git clone https://github.com/pparacch/GettingAndCleaningData.git`
 * Open a R console (R or RStudio)
-* __Important!__ Remember to set the __working directory__ to the folder containing the cloned repository
-* run `run_analisys.R` using `source("run_analisys.R")` in the R console to create the tidy_dataset (___tidy\_data\_set.txt__)
-	* unzip the raw dataset (rawData.zip) in a "data" folder in the working directory. The folder is created if it does not exist.
-	* load and process the required data
-	* save the tidy dataset (__tidy\_data\_set.txt__) in the working directory
+* __Important!__ Remember to set the __working directory__ to the folder of the cloned repository created in the previous step
+* run `run_analisys.R` using `source("run_analisys.R")` in the R console to create the tidy_dataset (___tidy\_data\_set.txt__) in teh working directory
+	* __Note!__ If the file __tidy\_data\_set.txt__ is not present in the working directory, it will be created; otherwise, if present, it will be overwritten.
 
 ##The Recipe: run_analisys.R
 __run_analisys.R__ script uses the local copy of the raw data (__rawData.zip__) for the generation of the tidy dataset (__tidy\_data\_set.txt__).
