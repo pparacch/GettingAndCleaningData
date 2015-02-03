@@ -10,7 +10,7 @@
 #Check if the "data" folder exists in the
 #working directory. If does not exist - 
 #create it
-if(file.exists("./data")){
+if(!file.exists("./data")){
         dir.create("./data")
 }
 
